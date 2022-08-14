@@ -7,10 +7,11 @@
     padding:0;
 }
 .sidebar{
+    position: absolute;
     background-color: rgb(153, 144, 144);
-    width: 350px ;
+    transition: transform 0.2s ease-in;
     font-family: 'Roboto', sans-serif;
-    height: 110vh;
+    height: 100vh;
 }
 .sidebar nav{
     padding: 20px;
@@ -26,7 +27,8 @@
 }
 
 .main{
-    background-color: lightcyan;
+    padding: 23px;
+    
     width: 90vw;
 }
 .container{
@@ -34,13 +36,13 @@
     /* width: auto; */
 }
 .infoContainer{
-    background-color: pink;
-    height:58vh;
+ 
+    height:45vh;
     width: 80vw;
     margin: 144px auto;
     display: flex;
     justify-content: space-around;
-    padding-left: 30px;
+    padding-left:30px;
 }
 
 .devInfo{
@@ -54,18 +56,18 @@
 }
 
 .hello{
-    font-size: 50px;
+    font-size: 20px;
     font-family: 'Source Code Pro', monospace;
 }
 .name{
     
     font-family: 'Roboto', sans-serif;
 
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
 }
 .about{
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Source Code Pro', monospace;
 }
 .moreabout{
@@ -99,7 +101,7 @@
 }
 .contactform{
     padding: 0 34px;
-    padding-top: 80px;
+    padding-top: 20px;
     
     font-family: 'Roboto', sans-serif;
 
@@ -139,6 +141,7 @@
 }
 
 .blogItem{
+
     margin: 20px;
     font-family: 'Roboto', sans-serif;
 }
@@ -150,8 +153,12 @@ p{
     font-family: 'Source Code Pro', monospace;
 
 }
+ .intro{
+    ;
+ }
 
 .intro h2{
+    
     font-family: 'Roboto', sans-serif;
     margin: 12px;
 }
@@ -159,4 +166,100 @@ p{
 .intro p{
     font-family: 'Source Code Pro', monospace;
     margin: 12px;
+    
 }
+
+.skillContainer{
+    padding: 12px;
+
+}
+
+.skillItem{
+    display:flex;
+    align-items: center;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.hundred{
+    width:250px;
+    background-color: red;
+}
+
+.ninty{
+    width:225px;
+    background-color: red;
+}
+.eighty{
+    width:200px;
+    background-color: orangered;
+}
+.seventyfive{
+    width:187.5px;
+    background-color: orangered;
+}
+.seventy{
+    width:175px;
+    background-color: orangered;
+}
+.sixty{
+    width:150px;
+    background-color: orange;
+}
+.fifty{
+    width:125px;
+    background-color: orange;
+}
+.forty{
+    width:100px;
+    background-color: yellow;
+}
+.thirty{
+    width:75px;
+    background-color: yellow;
+}
+.twentyfive{
+    width:62.5px;
+    background-color: yellow;
+}
+.twenty{
+    width:50px;
+    background-color: yellowgreen;
+}
+.ten{
+    width:250px;
+    background-color: yellowgreen;
+}
+
+@media(max-width:1115px){
+    *{
+    /* background-color: red; */
+    }
+    .devPic{
+        display: none;
+    }
+    .intro, .blogContainer, .contactform{
+        margin: 50px 8px;
+    }
+    
+}
+.sidebarGo{
+    transform: translate(-400px,0px);
+    position: absolute;
+   }
+.menu{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.close{
+    margin-left: 90px;
+}
+
+
